@@ -221,10 +221,14 @@ body {
   }
 }
 
+.testimonials-container .text-container,
+.faqs-container .text-container,
 .road-map-container .text-container,
 .chart-container .text-container {
   max-width: 500px;
 }
+.testimonials-container .text-container p:nth-child(1),
+.faqs-container .text-container p:nth-child(1),
 .road-map-container .text-container p:nth-child(1),
 .chart-container .text-container p:nth-child(1) {
   font-weight: 600;
@@ -234,6 +238,8 @@ body {
   letter-spacing: 0.1em;
   color: #16fcd2;
 }
+.testimonials-container .text-container p:nth-child(2),
+.faqs-container .text-container p:nth-child(2),
 .road-map-container .text-container p:nth-child(2),
 .chart-container .text-container p:nth-child(2) {
   font-style: normal;
@@ -251,4 +257,89 @@ body {
   box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.24);
   border-radius: 15px;
   width: 100%;
+}
+
+.testimonials-container .persons-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.testimonials-container .persons-container > div {
+  margin: 1rem;
+}
+.testimonials-container .persons-container > div > div {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials-container .persons-container > div .avatar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/assets/svg/avatar.svg);
+  height: 75px;
+  display: block;
+  margin-bottom: 1rem;
+  width: 75px;
+}
+.testimonials-container .persons-container > div .name {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.testimonials-container .persons-container > div .company {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.faqs-container .accordion {
+  width: 100%;
+}
+.faqs-container .accordion .accordion-item,
+.faqs-container .accordion .accordion-item .accordion-button,
+.faqs-container .accordion .accordion-item .accordion-body {
+  background: rgba(255, 255, 255, 0.05);
+}
+.faqs-container .accordion .accordion-item .accordion-body {
+  font-size: 19px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.faqs-container .accordion .accordion-item .accordion-button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  background: #6016fc;
+  color: #ffffff;
+}
+.faqs-container .accordion .accordion-item .accordion-button.collapsed {
+  background: rgba(255, 255, 255, 0.05);
+}
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  background: url(/assets/svg/expand.svg) !important;
+}
+
+.links-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.links-container p {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 46px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.links-container > div {
+  width: 400px;
 }
