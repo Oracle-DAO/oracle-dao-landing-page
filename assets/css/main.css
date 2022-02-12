@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-image: url(/assets/img/main-bg.png);
   background-size: cover;
 }
@@ -24,6 +24,38 @@ body {
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: white;
 }
+.twitter,
+.discord {
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  display: none;
+}
+.twitter {
+  background-image: url(/assets/svg/twitter.svg);
+}
+.discord {
+  background-image: url(/assets/svg/discord.svg);
+}
+.social-link-container {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 992px) {
+  .nav-item .twitter,
+  .nav-item .discord {
+    display: inline-block;
+  }
+}
+@media (min-width: 993px) {
+  .menu-item.twitter,
+  .menu-item.discord {
+    display: inline-block;
+  }
+}
 
 .main-info {
   background-image: url(/assets/svg/world.svg);
@@ -32,7 +64,7 @@ body {
   background-size: cover;
 }
 .main-info > div {
-  max-width: 600px;
+  max-width: 800px;
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
@@ -89,6 +121,14 @@ body {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 3px;
 }
+.logo-small {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/assets/svg/logo-small.svg);
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
 @media (max-width: 930px) {
   .cards-container {
     flex-wrap: wrap;
@@ -96,4 +136,119 @@ body {
   .cards-container > div {
     margin-right: 0 !important;
   }
+  .work-image,
+  .team-image {
+    height: 320px !important;
+  }
+}
+
+.how-we-work-container .work-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/assets/svg/how-we-work.svg);
+  height: 500px;
+  width: 50%;
+}
+.how-we-work-container .work-text {
+  width: 50%;
+}
+.how-we-work-container .work-text p:nth-child(1) {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  color: #16fcd2;
+}
+.how-we-work-container .work-text p:nth-child(2) {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.how-we-work-container .work-text p:nth-child(3) {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.how-we-work-container .work-text button {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.out-team-container .team-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/assets/svg/team.svg);
+  background-size: contain;
+  height: 550px;
+  width: 50%;
+}
+.out-team-container .team-text {
+  width: 50%;
+}
+.out-team-container .team-text p:nth-child(1) {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  color: #16fcd2;
+}
+.out-team-container .team-text p:nth-child(2) {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.out-team-container .team-text p:nth-child(3) {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 570px) {
+  .team-text,
+  .work-text {
+    width: 100% !important;
+  }
+}
+
+.road-map-container .text-container,
+.chart-container .text-container {
+  max-width: 500px;
+}
+.road-map-container .text-container p:nth-child(1),
+.chart-container .text-container p:nth-child(1) {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #16fcd2;
+}
+.road-map-container .text-container p:nth-child(2),
+.chart-container .text-container p:nth-child(2) {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+.road-map-container .image-container,
+.chart-container .image-container {
+  background: #002060;
+  border: 1px solid #6016fc;
+  box-sizing: border-box;
+  box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+  width: 100%;
 }
