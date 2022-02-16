@@ -343,3 +343,19 @@ body {
 .links-container > div {
   width: 400px;
 }
+
+footer .logo {
+  height: 36px;
+  width: 140px;
+  background-image: url(/assets/svg/logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+footer .twitter,
+footer .discord {
+  display: inline-block !important;
+}
