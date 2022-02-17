@@ -49,6 +49,10 @@ body {
   .nav-item .discord {
     display: inline-block;
   }
+  .links-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media (min-width: 993px) {
   .menu-item.twitter,
@@ -218,6 +222,18 @@ body {
   .team-text,
   .work-text {
     width: 100% !important;
+  }
+  footer.justify-content-between {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  footer.justify-content-between div:nth-child(1) span:nth-child(2),
+  footer.justify-content-between .nav {
+    justify-content: center;
+    display: flex;
+  }
+  .testimonials-container .persons-container > div {
+    flex-grow: 1;
   }
 }
 
