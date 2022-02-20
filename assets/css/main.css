@@ -24,29 +24,21 @@ body {
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: white;
 }
-.twitter,
-.discord {
-  height: 30px;
-  width: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 0;
+.social-links {
   display: none;
 }
-.twitter {
-  background-image: url(/assets/svg/twitter.svg);
-}
-.discord {
-  background-image: url(/assets/svg/discord.svg);
-}
+
 .social-link-container {
   display: flex;
   position: absolute;
   right: 0;
 }
+.menu-item {
+  font-size: 25px;
+  color: white;
+}
 @media (max-width: 992px) {
-  .nav-item .twitter,
-  .nav-item .discord {
+  .nav-item .social-links {
     display: inline-block;
   }
   .links-container {
@@ -55,8 +47,8 @@ body {
   }
 }
 @media (min-width: 993px) {
-  .menu-item.twitter,
-  .menu-item.discord {
+  .menu-item,
+  .menu-item {
     display: inline-block;
   }
 }
@@ -293,10 +285,18 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.road-map-container .road-map i {
+  font-size: 50px;
+  color: white;
+}
+.road-map-container .road-map i.done {
+  color: green;
+}
 .road-map-container .road-map > div {
   flex-basis: 0;
   padding: 1rem;
   min-width: 300px;
+  display: flex;
   flex-grow: 1;
 }
 .road-map-container .road-map .month {
@@ -421,6 +421,8 @@ footer .nav-link {
 footer .list-group-item {
   background: transparent;
   border: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .copyright {
