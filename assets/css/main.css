@@ -106,6 +106,7 @@ body {
 .cards-container > div {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 5px;
+  flex-basis: 0;
 }
 .cards-container > div > p:nth-child(2) {
   font-weight: bold;
@@ -151,7 +152,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(/assets/svg/how-we-work.svg);
-  height: 500px;
+  height: 350px;
   width: 50%;
 }
 .how-we-work-container .work-text {
@@ -192,7 +193,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(/assets/svg/team.svg);
   background-size: contain;
-  height: 550px;
+  height: 385px;
   width: 50%;
 }
 .out-team-container .team-text {
@@ -218,6 +219,16 @@ body {
   line-height: 32px;
   color: rgba(255, 255, 255, 0.6);
 }
+.out-team-container .team-text button {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
 @media (max-width: 570px) {
   .team-text,
   .work-text {
@@ -227,10 +238,12 @@ body {
     flex-wrap: wrap;
     justify-content: center !important;
   }
-  footer.justify-content-between div:nth-child(1) span:nth-child(2),
-  footer.justify-content-between .nav {
-    justify-content: center;
+  footer.justify-content-between > * {
     display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .testimonials-container .persons-container > div {
     flex-grow: 1;
@@ -241,7 +254,7 @@ body {
 .faqs-container .text-container,
 .road-map-container .text-container,
 .chart-container .text-container {
-  max-width: 500px;
+  max-width: 800px;
 }
 .testimonials-container .text-container p:nth-child(1),
 .faqs-container .text-container p:nth-child(1),
@@ -267,30 +280,64 @@ body {
 }
 .road-map-container .image-container,
 .chart-container .image-container {
-  background: #002060;
-  border: 1px solid #6016fc;
+  background: rgba(255, 255, 255, 0.05);
+  border: 0.5px solid #6016fc;
   box-sizing: border-box;
   box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.24);
   border-radius: 15px;
   width: 100%;
 }
 
+.road-map-container .road-map {
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.road-map-container .road-map > div {
+  flex-basis: 0;
+  padding: 1rem;
+  min-width: 300px;
+  flex-grow: 1;
+}
+.road-map-container .road-map .month {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #f2faff;
+  border-bottom: 1px solid rgba(96, 22, 252, 1);
+  padding: 1rem;
+}
+.road-map-container .road-map li {
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 5px;
+}
+
 .testimonials-container .persons-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  width: 100%;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 .testimonials-container .persons-container > div {
+  flex-grow: 1;
+  flex-basis: auto;
   margin: 1rem;
 }
 .testimonials-container .persons-container > div > div {
   padding: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -299,20 +346,20 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(/assets/svg/avatar.svg);
-  height: 75px;
+  height: 100px;
   display: block;
   margin-bottom: 1rem;
-  width: 75px;
+  width: 100px;
 }
 .testimonials-container .persons-container > div .name {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 19px;
   color: #ffffff;
 }
 .testimonials-container .persons-container > div .company {
   font-weight: 500;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -367,11 +414,20 @@ footer .logo {
   background-position: center;
   background-repeat: no-repeat;
 }
-footer .nav .nav-item .nav-link {
+footer .nav-link {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
 }
-footer .twitter,
-footer .discord {
-  display: inline-block !important;
+footer .list-group-item {
+  background: transparent;
+  border: none;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 1rem;
+  margin: 0;
 }
