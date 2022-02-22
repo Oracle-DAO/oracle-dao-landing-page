@@ -139,6 +139,15 @@ body {
   }
 }
 
+.how-we-work-text-container > p:nth-child(1) {
+  margin-top: 70px;
+  color: #16fcd2;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 32px;
+}
+
 .how-we-work-container .work-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -151,20 +160,13 @@ body {
   width: 50%;
 }
 .how-we-work-container .work-text p:nth-child(1) {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 0.1em;
-  color: #16fcd2;
-}
-.how-we-work-container .work-text p:nth-child(2) {
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 48px;
   color: #ffffff;
 }
-.how-we-work-container .work-text p:nth-child(3) {
+.how-we-work-container .work-text p:nth-child(2) {
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
@@ -357,11 +359,18 @@ body {
   line-height: 19px;
   color: #ffffff;
 }
-.testimonials-container .persons-container > div .company {
+.testimonials-container .persons-container > div .company-position {
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+.testimonials-container .persons-container > div .company-profession {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
 }
 
 .faqs-container .accordion {
