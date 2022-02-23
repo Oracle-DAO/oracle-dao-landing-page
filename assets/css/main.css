@@ -303,6 +303,11 @@ body {
   display: flex;
   flex-grow: 1;
 }
+.road-map-container .road-map img {
+  width: 60px;
+  height: 80px;
+  margin-top: 20px;
+}
 .road-map-container .road-map .month {
   font-weight: 600;
   font-size: 15px;
@@ -310,7 +315,9 @@ body {
   text-transform: capitalize;
   color: #f2faff;
   border-bottom: 1px solid rgba(96, 22, 252, 1);
-  padding: 1rem;
+  padding-top: 1rem;
+  margin-left: 10px;
+  padding-bottom: 5px;
 }
 .road-map-container .road-map li {
   font-size: 15px;
@@ -443,4 +450,12 @@ footer .list-group-item {
   letter-spacing: 1px;
   padding: 1rem;
   margin: 0;
+}
+
+.btn-primary {
+  background: #6016fc;
+  border-color: #6016fc;
+}
+.btn-outline-primary {
+  color: white;
 }
