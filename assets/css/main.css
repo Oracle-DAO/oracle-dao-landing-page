@@ -58,6 +58,8 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: calc(100vh - 104px);
+  align-items: center;
 }
 .main-info > div {
   max-width: 800px;
