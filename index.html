@@ -10,7 +10,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YR8ZEP20"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-E8YR8ZEP20');
@@ -40,7 +40,7 @@
 </head>
 
 <body>
-    <div class="container pt-5">
+    <div class="container py-5">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand mt-2" href="#"></a>
@@ -72,9 +72,9 @@
                             <a title="Discord" class="social-links nav-link me-3" target="_blank"
                                 href="https://discord.gg/ARMF5kDctx">
                                 <i class="bi-discord"></i></a>
-<!--                            <a title="Facebook" class="social-links nav-link me-3" target="_blank"-->
-<!--                                href="https://www.facebook.com/OracleFinanceDAO">-->
-<!--                                <i class="bi-facebook"></i></a>-->
+                            <!--                            <a title="Facebook" class="social-links nav-link me-3" target="_blank"-->
+                            <!--                                href="https://www.facebook.com/OracleFinanceDAO">-->
+                            <!--                                <i class="bi-facebook"></i></a>-->
                             <a title="Instagram" class="social-links nav-link me-3" target="_blank"
                                 href="https://www.instagram.com/oracle_finance/">
                                 <i class="bi-instagram"></i></a>
@@ -91,9 +91,9 @@
                     <a title="Discord" class="menu-item social-links me-3" target="_blank"
                         href="https://discord.gg/ARMF5kDctx">
                         <i class="bi-discord"></i></a>
-<!--                    <a title="Facebook" class="menu-item social-links me-3" target="_blank"-->
-<!--                        href="https://www.facebook.com/OracleFinanceDAO">-->
-<!--                        <i class="bi-facebook"></i></a>-->
+                    <!--                    <a title="Facebook" class="menu-item social-links me-3" target="_blank"-->
+                    <!--                        href="https://www.facebook.com/OracleFinanceDAO">-->
+                    <!--                        <i class="bi-facebook"></i></a>-->
                     <a title="Instagram" class="menu-item social-links me-3" target="_blank"
                         href="https://www.instagram.com/oracle_finance/">
                         <i class="bi-instagram"></i></a>
@@ -103,6 +103,17 @@
                 </span>
             </div>
         </nav>
+    </div>
+    <div class="notification">
+        <div class="container d-flex py-3">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+            <button type="button" class="btn btn-primary px-4">Button</button>
+        </div>
+    </div>
+    <div class="container">
         <section class="main-info d-flex justify-content-center">
             <div>
                 <p>What is Oracle Finance?</p>
@@ -112,7 +123,8 @@
                         sustainable growth in any market condition</p>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary me-1 px-5 mt-3", onclick="openDiscord();">Join Discord</button>
+                    <button type="button" class="btn btn-primary me-1 px-5 mt-3" , onclick="openDiscord();">Join
+                        Discord</button>
                     <button type="button" class="btn btn-outline-primary px-5 mt-3"
                         onclick="downloadWhitepaper();">Whitepaper</button>
                 </div>
@@ -428,8 +440,8 @@
                         href="https://twitter.com/Oracle_Finance">Twitter</a></li>
                 <li class="list-group-item"><a class="nav-link" target="_blank"
                         href="https://discord.gg/ARMF5kDctx">Discord</a></li>
-<!--                <li class="list-group-item"><a class="nav-link" target="_blank"-->
-<!--                        href="https://www.facebook.com/OracleFinanceDAO">Facebook</a></li>-->
+                <!--                <li class="list-group-item"><a class="nav-link" target="_blank"-->
+                <!--                        href="https://www.facebook.com/OracleFinanceDAO">Facebook</a></li>-->
                 <li class="list-group-item"><a class="nav-link" target="_blank"
                         href="https://www.instagram.com/oracle_finance/">Instagram</a></li>
                 <li class="list-group-item"><a class="nav-link" target="_blank"
@@ -446,10 +458,16 @@
                         target="_blank">Whitepaper</a></li>
                 <li class="list-group-item"><a class="nav-link" href="https://docs.oracledao.finance/"
                         target="_blank">Docs</a></li>
-            </ul>
-            <ul class="list-group">
                 <li class="list-group-item"><a class="nav-link" href="https://tinyurl.com/OFAmbassador"
                         target="_blank">Become an Ambassador</a></li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <button type="button" class="nav-link whitepaper-download" onclick="downloadWhitepaper();">
+                        <img class="img-fluid" src="assets/img/whitepaper.png">
+                        Whitepaper
+                    </button>
+                </li>
                 <!-- <li class="list-group-item"><a class="nav-link" href="#aboutUs">About Us</a></li> -->
             </ul>
             <!--            <div>-->

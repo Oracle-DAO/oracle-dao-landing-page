@@ -53,12 +53,29 @@ body {
   }
 }
 
+.notification {
+  background: #6016fc;
+}
+.notification p {
+  font-size: 15px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.notification button {
+  background: #f7f8ff;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6016fc;
+}
+
 .main-info {
   background-image: url(/assets/svg/world.svg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: calc(100vh - 104px);
+  min-height: calc(100vh - 226px);
   align-items: center;
 }
 .main-info > div {
@@ -441,6 +458,42 @@ footer .list-group-item {
   border: none;
   padding-top: 0;
   padding-bottom: 0;
+}
+footer .whitepaper-download {
+  width: 150px;
+  height: 175px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .whitepaper-download:hover {
+  color: white;
+}
+footer .whitepaper-download img {
+  width: 70px;
+  height: 85px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  footer > * {
+    width: 100%;
+  }
+  footer > div {
+    align-items: center;
+  }
+  footer .whitepaper-download {
+    margin: auto;
+    margin-top: 1rem;
+  }
 }
 
 .copyright {
