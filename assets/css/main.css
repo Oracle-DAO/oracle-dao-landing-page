@@ -55,11 +55,15 @@ body {
 
 .notification {
   background: #6016fc;
+  display: flex;
+  flex-direction: row;
 }
 .notification p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  align-self: center;
+  letter-spacing: 0.1em;
 }
 .notification button {
   background: #f7f8ff;
@@ -68,6 +72,11 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #6016fc;
+}
+.join-button{
+  width: 25%;
+  display: flex;
+  justify-content: center;
 }
 
 .main-info {
