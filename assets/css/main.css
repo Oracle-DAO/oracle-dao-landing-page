@@ -57,6 +57,7 @@ body {
   background: #6016fc;
   display: flex;
   flex-direction: row;
+  display: none;
 }
 .notification p {
   font-size: 16px;
@@ -73,7 +74,7 @@ body {
   line-height: 22px;
   color: #6016fc;
 }
-.join-button{
+.join-button {
   width: 25%;
   display: flex;
   justify-content: center;
@@ -84,7 +85,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: calc(100vh - 226px);
+  min-height: calc(100vh - 150px);
   align-items: center;
 }
 .main-info > div {
@@ -92,6 +93,24 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
+}
+.main-info > div .trust {
+  color: #ffffff;
+  font-weight: bold;
+  max-width: 100%;
+  line-height: 35px;
+}
+.main-info > div .trust img {
+  height: 25px;
+  margin-left: 10px;
+}
+.main-info > div .trust img.defi {
+  height: 30px;
+}
+.main-info > div .trust .divider {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid white;
 }
 .main-info > div > p:nth-child(1) {
   color: #16fcd2;
