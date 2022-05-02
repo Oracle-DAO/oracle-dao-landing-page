@@ -204,10 +204,10 @@ body {
   width: 50%;
 }
 .container-image-left .work-image.reward {
-  background-image: url(/assets/svg/reward-distribution.svg);
+  background-image: url(/assets/img/reward-distribution.png);
 }
 .container-image-left .work-image.eco-system {
-  background-image: url(/assets/svg/eco-system.svg);
+  background-image: url(/assets/img/eco-system.png);
 }
 .container-image-left .work-text {
   width: 50%;
@@ -252,10 +252,10 @@ body {
   width: 50%;
 }
 .container-image-right .team-image.graph {
-  background-image: url(/assets/svg/graph.svg);
+  background-image: url(/assets/img/graph.png);
 }
 .container-image-right .team-image.capital {
-  background-image: url(/assets/svg/capital.svg);
+  background-image: url(/assets/img/capital.png);
 }
 .container-image-right .team-text {
   width: 50%;
