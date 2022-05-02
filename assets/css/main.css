@@ -208,6 +208,7 @@ body {
 }
 .container-image-left .work-image.eco-system {
   background-image: url(/assets/img/eco-system.png);
+  height: 400px;
 }
 .container-image-left .work-text {
   width: 50%;
