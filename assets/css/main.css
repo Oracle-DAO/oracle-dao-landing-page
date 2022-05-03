@@ -104,6 +104,9 @@ body {
   height: 25px;
   margin-left: 10px;
 }
+.main-info > div .trust img.ploygon {
+  height: 45px;
+}
 .main-info > div .trust img.defi {
   height: 30px;
 }
