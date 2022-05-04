@@ -110,6 +110,12 @@ body {
 .main-info > div .trust img.defi {
   height: 30px;
 }
+
+img.hydn {
+  padding-left: 30px;
+  width: 170px;
+}
+
 .main-info > div .trust .divider {
   margin-left: 1rem;
   margin-right: 1rem;
