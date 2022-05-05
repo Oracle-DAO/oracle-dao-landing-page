@@ -576,4 +576,9 @@ footer .whitepaper-download img {
   height: 100px;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.companies {
+  padding-bottom: 0 !important;
 }
