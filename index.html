@@ -62,11 +62,15 @@
                             <a class="nav-link active" aria-current="page" href="#flowChart">Workflow</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="https://docs.oracledao.finance/whitepaper-and-roadmap/roadmap">Roadmap</a>
+                            <a class="nav-link"
+                                href="https://docs.oracledao.finance/whitepaper-and-roadmap/roadmap">Roadmap</a>
                         </li>
                         <li class="nav-item me-4">
                             <a class="nav-link" href="https://tinyurl.com/OFAmbassador" target="_blank">Become an
                                 Ambassador</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="https://test.launchpad.oracledao.finance/" target="_blank">Launchpad</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#aboutUs">About Us</a>
@@ -78,9 +82,6 @@
                             <a title="Discord" class="social-links nav-link me-3" target="_blank"
                                 href="https://discord.gg/ARMF5kDctx">
                                 <i class="bi-discord"></i></a>
-                            <!--                            <a title="Facebook" class="social-links nav-link me-3" target="_blank"-->
-                            <!--                                href="https://www.facebook.com/OracleFinanceDAO">-->
-                            <!--                                <i class="bi-facebook"></i></a>-->
                             <a title="Instagram" class="social-links nav-link me-3" target="_blank"
                                 href="https://www.instagram.com/oracle_finance/">
                                 <i class="bi-instagram"></i></a>
@@ -97,9 +98,6 @@
                     <a title="Discord" class="menu-item social-links me-3" target="_blank"
                         href="https://discord.gg/ARMF5kDctx">
                         <i class="bi-discord"></i></a>
-                    <!--                    <a title="Facebook" class="menu-item social-links me-3" target="_blank"-->
-                    <!--                        href="https://www.facebook.com/OracleFinanceDAO">-->
-                    <!--                        <i class="bi-facebook"></i></a>-->
                     <a title="Instagram" class="menu-item social-links me-3" target="_blank"
                         href="https://www.instagram.com/oracle_finance/">
                         <i class="bi-instagram"></i></a>
@@ -110,14 +108,14 @@
             </div>
         </nav>
     </div>
-    <div class="container notification">
-        <div class="container d-flex justify-content-center py-3">
-            <p class="m-0">Oracle Finance public presale is live now on valleyswap !!!</p>
-        </div>
-        <div class="container join-button py-3">
-            <button type="button" class="btn btn-primary px-5" onclick="openSale()">Join Now</button>
-        </div>
-    </div>
+<!--    <div class="container notification">-->
+<!--        <div class="container d-flex justify-content-center py-3">-->
+<!--            <p class="m-0">Oracle Finance public presale is live now on valleyswap !!!</p>-->
+<!--        </div>-->
+<!--        <div class="container join-button py-3">-->
+<!--            <button type="button" class="btn btn-primary px-5" onclick="openSale()">Join Now</button>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="container">
         <section class="main-info d-flex justify-content-center">
             <div>
@@ -129,15 +127,15 @@
                 </div>
                 <div class="trust">
                     <span>Powered by</span>
-                    <img src="assets/img/oasis.png">
+                    <img src="assets/svg/polygon.svg" class="ploygon">
                     <span class="divider"></span>
                     <span>KYC by</span>
                     <a href="https://www.theobsidiancouncil.com/projects/oracle-finance" target="_blank">
                         <img src="assets/svg/obsidian.svg">
                     </a>
                     <span class="divider"></span>
-                    <span>Ongoing Audit by</span>
-                    <a href="https://defisecurity.io/" target="_blank">
+                    <span>Audited by</span>
+                    <a href="https://defisecurity.io/dist/files/Oracle_DAO_Audit_Report_1.1.pdf" target="_blank">
                         <img src="assets/svg/defi.svg" class="defi">
                     </a>
                 </div>
@@ -155,7 +153,7 @@
                 Your browser does not support HTML video.
             </video>
         </section>
-        <div class="mt-5 cards-container d-flex flex-row">
+        <!-- <div class="mt-5 cards-container d-flex flex-row">
             <div class="p-5 mt-3 flex-grow-1 me-3">
                 <div class="mb-3">
                     <div class="logo-small m-2"></div>
@@ -182,28 +180,45 @@
                 <p>The total profit generated by the protocol is distributed to all stakers in stable coins,
                     thus generating a passive yield with relatively low risks</p>
             </div>
-        </div>
-        <section class="how-we-work-text-container d-flex justify-content-center">
-            <p>How Treasury Backing Increases?</p>
-        </section>
-        <section id="projects" class="mt-5 how-we-work-container d-flex p-3 align-items-center">
-            <div class="work-image d-none d-sm-block"></div>
+        </div> -->
+        <section class="mt-5 container-image-left d-flex p-3 align-items-center">
+            <div class="work-image reward d-none d-sm-block"></div>
             <div class="work-text p-5">
+                <p>Passive Yield</p>
+                <p>Rewards Distribution</p>
+                <p>Staked ORCL holders will be able to enjoy stable coin distribution rather than rebase rewards,
+                    which will prevent inflation being generated due to high staking rewards.</p>
+            </div>
+        </section>
+        <section class="mt-5 container-image-right d-flex p-3 align-items-center">
+            <div class="team-text p-5">
+                <p>Market Dynamics</p>
+                <p>Increasing Floor Price</p>
+                <p>Each ORFI token in circulation is backed by treasury, which gives it an intrinsic value. The inflows
+                    from bonding, Oracle Ecosystem and Oracle Capital makes sure that ORFI token has an increasing floor price.
+                </p>
+            </div>
+            <div class="team-image graph d-none d-sm-block"></div>
+        </section>
+        <section id="projects" class="mt-5 container-image-left d-flex p-3 align-items-center">
+            <div class="work-image eco-system d-none d-sm-block"></div>
+            <div class="work-text p-5">
+                <p>HOW WE WORK</p>
                 <p>Oracle Ecosystem</p>
                 <p>Oracle Finance will power many platforms and applications which will grow the entire ecosystem
-                    and help bring more profits to the treasury</p>
+                    and help bring more profits to the treasury.</p>
                 <!--                <button type="button" class="btn btn-primary mt-3 p-3 px-5">LAUNCH APP</button>-->
             </div>
         </section>
-        <section class="mt-5 out-team-container d-flex p-3 align-items-center">
+        <section class="mt-5 container-image-right d-flex p-3 align-items-center">
             <div class="team-text p-5">
-                <p></p>
+                <p>HOW WE WORK</p>
                 <p>Oracle Capital</p>
                 <p>A percentage of treasury is allocated to Venture Funds, Liquid Token Funds, and Yield Farming
                     for better capital efficiency and rewards for the entire ecosystem and its users.</p>
-                <!--                <button type="button" class="btn btn-primary mt-3 p-3 px-5">LAUNCH APP</button>-->
+<!--                                <button type="button" class="btn btn-primary mt-3 p-3 px-5">LAUNCH APP</button>-->
             </div>
-            <div class="team-image d-none d-sm-block"></div>
+            <div class="team-image capital d-none d-sm-block"></div>
         </section>
         <section id="flowChart" class="mt-5 chart-container d-flex flex-column align-items-center">
             <div class="text-container">
@@ -215,64 +230,27 @@
                 <img class="img-fluid" src="assets/img/workflow.png">
             </div>
         </section>
-<!--        <section id="roadmap" class="mt-5 road-map-container d-flex flex-column align-items-center">-->
-<!--            <div class="text-container">-->
-<!--                <p>Roadmap</p>-->
-<!--                &lt;!&ndash;                <p>This Roadmap will be constantly updated and is not static</p>&ndash;&gt;-->
-<!--                <br>-->
-<!--            </div>-->
-<!--            <div class="image-container road-map d-flex p-3">-->
-<!--                <div>-->
-<!--                    <img src="assets/img/dec.png">-->
-<!--                    <div>-->
-<!--                        <p class="month">February</p>-->
-<!--                        <ul>-->
-<!--                            <li>Discord, Twitter, and Telegram Launch​</li>-->
-<!--                            <li>Marketing operation initiates​</li>-->
-<!--                            <li>Team Building</li>-->
-<!--                            <li>Publish Oracle Finance Whitepaper</li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <img src="assets/img/jan.png">-->
-<!--                    <div>-->
-<!--                        <p class="month">March</p>-->
-<!--                        <ul>-->
-<!--                            <li>Core contract ready​</li>-->
-<!--                            <li>​LaunchPad ready​</li>-->
-<!--                            <li>​TestApp Launch</li>-->
-<!--                            <li>Partnerships and Marketing</li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <img src="assets/img/mar.png">-->
-<!--                    <div>-->
-<!--                        <p class="month">April</p>-->
-<!--                        <ul>-->
-<!--                            <li>Community Pre-Sale​​</li>-->
-<!--                            <li>​Fair-Launch</li>-->
-<!--                            <li>​Mainnet Live</li>-->
-<!--                            <li>Expanding the Team</li>-->
-<!--                            <li>Partnership with SWAPs and DAOs​</li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <img src="assets/img/apr.png">-->
-<!--                    <div>-->
-<!--                        <p class="month">May</p>-->
-<!--                        <ul>-->
-<!--                            <li>Yield Aggregators Go Live​​</li>-->
-<!--                            <li>​Governance setup</li>-->
-<!--                            <li>​NFT platform</li>-->
-<!--                            <li>​Future roadmap release</li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
+        <section id="flowChart" class="mt-5 chart-container d-flex flex-column align-items-center">
+            <div class="text-container">
+                <p>Partners and Backers</p>
+                <br>
+            </div>
+            <div class="image-container d-flex justify-content-center companies flex-wrap">
+                <img src="assets/img/companies/a-ventures.png">
+                <img src="assets/img/companies/pa.png">
+                <img src="assets/img/MAM.png">
+                <img src="assets/img/Digits_Club.png">
+                <img src="assets/img/hydn-logo.41b9f0ae.png" class="hydn" >
+            </div>
+        </section>
+        <section id="flowChart" class="mt-5 chart-container d-flex flex-column align-items-center">
+            <div class="text-container">
+                <p>Roadmap</p>
+                <br>
+            </div>
+            <img class="img-fluid" src="assets/img/road-map.png">
+        </section>
+
         <!--        <section id="aboutUs" class="testimonials-container mt-5 d-flex flex-column align-items-center">-->
         <!--            <div class="text-container">-->
         <!--                <p>Team</p>-->
@@ -352,7 +330,6 @@
         <section class="faqs-container mt-5 d-flex flex-column align-items-center">
             <div class="text-container">
                 <p>FAQs</p>
-                <!--                <p>Frequently Asked Questions</p>-->
                 <br>
             </div>
             <div class="accordion" id="accordionExample">

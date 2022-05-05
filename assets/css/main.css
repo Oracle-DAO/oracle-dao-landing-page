@@ -104,9 +104,18 @@ body {
   height: 25px;
   margin-left: 10px;
 }
+.main-info > div .trust img.ploygon {
+  height: 45px;
+}
 .main-info > div .trust img.defi {
   height: 30px;
 }
+
+img.hydn {
+  padding-left: 30px;
+  width: 170px;
+}
+
 .main-info > div .trust .divider {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -195,31 +204,47 @@ body {
   line-height: 32px;
 }
 
-.how-we-work-container .work-image {
+.container-image-left .work-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/assets/svg/how-we-work.svg);
+
   height: 350px;
   width: 50%;
 }
-.how-we-work-container .work-text {
+.container-image-left .work-image.reward {
+  background-image: url(/assets/img/reward-distribution.png);
+}
+.container-image-left .work-image.eco-system {
+  background-image: url(/assets/img/eco-system.png);
+  height: 400px;
+}
+.container-image-left .work-text {
   width: 50%;
 }
-.how-we-work-container .work-text p:nth-child(1) {
+.container-image-left .work-text p:nth-child(1) {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  color: #16fcd2;
+}
+.container-image-left .work-text p:nth-child(2) {
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 48px;
   color: #ffffff;
 }
-.how-we-work-container .work-text p:nth-child(2) {
+.container-image-left .work-text p:nth-child(3) {
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.6);
 }
-.how-we-work-container .work-text button {
+.container-image-left .work-text button {
   outline: none;
   border: none;
   background: rgba(255, 255, 255, 0.1);
@@ -229,38 +254,43 @@ body {
   color: #ffffff;
 }
 
-.out-team-container .team-image {
+.container-image-right .team-image {
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/assets/svg/team.svg);
   background-size: contain;
   height: 385px;
   width: 50%;
 }
-.out-team-container .team-text {
+.container-image-right .team-image.graph {
+  background-image: url(/assets/img/graph.png);
+}
+.container-image-right .team-image.capital {
+  background-image: url(/assets/img/capital.png);
+}
+.container-image-right .team-text {
   width: 50%;
 }
-.out-team-container .team-text p:nth-child(1) {
+.container-image-right .team-text p:nth-child(1) {
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 0.1em;
   color: #16fcd2;
 }
-.out-team-container .team-text p:nth-child(2) {
+.container-image-right .team-text p:nth-child(2) {
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 48px;
   color: #ffffff;
 }
-.out-team-container .team-text p:nth-child(3) {
+.container-image-right .team-text p:nth-child(3) {
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.6);
 }
-.out-team-container .team-text button {
+.container-image-right .team-text button {
   outline: none;
   border: none;
   background: rgba(255, 255, 255, 0.1);
@@ -327,6 +357,7 @@ body {
   box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.24);
   border-radius: 15px;
   width: 100%;
+  padding: 2rem;
 }
 
 .road-map-container .road-map {
@@ -539,4 +570,15 @@ footer .whitepaper-download img {
 }
 .btn-outline-primary {
   color: white;
+}
+
+.companies img {
+  height: 100px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.companies {
+  padding-bottom: 0 !important;
 }
