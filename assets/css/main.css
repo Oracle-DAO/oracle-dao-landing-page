@@ -301,9 +301,14 @@ img.hydn {
 }
 
 @media (max-width: 570px) {
+  .container-image-left,
+  .container-image-right {
+    margin-top: 0px !important;
+  }
   .team-text,
   .work-text {
     width: 100% !important;
+    padding: 1rem !important;
   }
   footer.justify-content-between {
     flex-wrap: wrap;
